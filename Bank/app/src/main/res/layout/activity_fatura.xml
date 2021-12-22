@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fatura">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_fatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/resumo_faturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Resumo das Faturas"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/vencimento_e_saldo"
+        android:text="Data de Vencimento: 05/02/2021\nSaldo Parcial: R$ 500,00"
+        android:layout_below="@id/resumo_faturas"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+
+    <Button
+        android:id="@+id/pagar_fatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vencimento_e_saldo"
+        android:layout_marginTop="50dp"
+        android:text="Pagar Fatura"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:padding="15dp"
+        android:backgroundTint="@color/light_blue"
+        />
+
+</LinearLayout>
